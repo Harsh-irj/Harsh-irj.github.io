@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Details | DTC</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+    <div id="navbar">
+        <img src="css/hamburger.png" alt="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/1.html">Home</a></li>
+            <li><a href="https://www.google.com">DTC</a></li>
+            <li><a href="#">Buy Tickets Online</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div id="container1" class="divider">
+            <img src="css/nobgline.png" alt="" id="join">
+            <p class="stops" id="display1"></p>
+            <p class="stops" id="display2"></p>
+        </div>
+        <div id="container2" class="divider">
+            
+        </div>
+    </div>
+    
+
+
+
+    <script>
+        const input1 = localStorage.getItem(`input1`);
+        const input2 = localStorage.getItem(`input2`);
+        document.getElementById(`display1`).textContent = `${input1}`;
+        document.getElementById(`display2`).textContent = `${input2}`;
+    </script>
+</body>
+</html>

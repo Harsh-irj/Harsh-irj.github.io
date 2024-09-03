@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan your Journey | DTC</title>
+    <link rel="stylesheet" href="2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar">
+        <img src="css/hamburger.png" alt="menu">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/1.html">Home</a></li>
+            <li><a href="#">DTC</a></li>
+            <li><a href="#">Buy Tickets Online</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <button onclick="savedata()" id="nextpage">Search</button>
+        <div id="container1" class="divider">
+            <p class="journeytext" id="text1">Source Bus-Stop</p>
+            <img src="css/nobgsearch.png" alt="search" class="search" id="startsearch">
+            <input type="text" placeholder="       Enter Source Bus Stop" id="startstop" list="stoplist" class="stop">
+            <datalist id="stoplist">
+                <option value="Anand Vihar ISBT Terminal"></option>
+                <option value="Gazipur Depot"></option>
+                <option value="Telco Gazipur"></option>
+                <option value="Hassanpur Village  "></option>
+                <option value="Hassanpur Depot "></option>
+                <option value="Ashirwad Apartment  "></option>
+                <option value=" Chandar Vihar"></option>
+                <option value="Neethi Apartment "></option>
+                <option value="Himalaya Apartment"></option>
+                <option value="Balco Apartment "></option>
+                <option value="Vijaya Laxmi Apartment "></option>
+                <option value="Parivar Apartment "></option>
+                <option value=" Ras Vihar"></option>
+                <option value="Saraswati Kunj   "></option>
+                <option value="Press Apartment "></option>
+                <option value="Govt Model School / Ambedkar Park"></option>
+                <option value="Dharma Apartment "></option>
+                <option value="Mother Dairy "></option>
+                <option value="Ganesh Nagar"></option>
+                <option value="Shakarpur School Block "></option>
+                <option value="Laxmi Nagar / Shakarpur Crossing"></option>
+                <option value="rainy well"></option>
+                <option value="Delhi Secretariat"></option>
+                <option value="ITO "></option>
+                <option value="Tilak Bridge"></option>
+                <option value="Mandi House"></option>
+                <option value="Modern School"></option>
+                <option value="Barakhamba Metro Station"></option>
+                <option value="Statesman House"></option>
+                <option value="Super Bazar"></option>
+                <option value="Sucheta Kriplani Hospital"></option>
+                <option value="Kalawati Hospital"></option>
+                <option value="Panchkuian Road"></option>
+                <option value="Panchkuian Road Banwari Lal Hospital "></option>
+                <option value="Meghdoot Bhawan"></option>
+                <option value="Karol Bagh Metro Station"></option>
+                <option value="Telephone Exchange Karol Bagh"></option>
+                <option value="Rajendra Place"></option>
+                <option value="East Patel Nagar "></option>
+                <option value="South Patel Nagar (Metro Station)"></option>
+                <option value="West Patel Nagar "></option>
+                <option value="Shadipur Metro Station"></option>
+                <option value="Shadipur Depot  "></option>
+                <option value="Moti Nagar Industrial Area"></option>
+                <option value="Karampura Terminal"></option>
+                <option value="New Moti Bagh B Block"></option>
+                <option value="Punjabi Bagh Terminal"></option>
+                <option value="Shakurpur Jjcolony"></option>
+                <option value="Samrat Enclave"></option>
+                <option value="Mahindra Park "></option>
+                <option value="Shakur Basti"></option>
+                <option value="Rani Bagh Railway Colony"></option>
+                <option value="Shri Guru Harkrishan Marg "></option>
+                <option value="Keshav Mahavidhyalaya"></option>
+                <option value="Bhagwan Mahavir Hospital"></option>
+                <option value="Mtnl Saraswati Vihar"></option>
+                <option value="West Enclave Terminal hu huh"></option>
+                
+            </datalist>
+        </div>
+        <div id="container2" class="divider">
+            <p class="journeytext" id="text2">Destination Bus-Stop</p>
+            <img src="css/nobgsearch.png" alt="search" class="search" id="stopsearch">
+            <input type="text" placeholder="       Enter Destination Bus Stop" id="deststop" list="stoplist" class="stop">
+            <datalist id="stoplist">
+                <option value="Anand Vihar ISBT Terminal"></option>
+                <option value="Gazipur Depot"></option>
+                <option value="Telco Gazipur"></option>
+                <option value="Hassanpur Village  "></option>
+                <option value="Hassanpur Depot "></option>
+                <option value="Ashirwad Apartment  "></option>
+                <option value=" Chandar Vihar"></option>
+                <option value="Neethi Apartment "></option>
+                <option value="Himalaya Apartment"></option>
+                <option value="Balco Apartment "></option>
+                <option value="Vijaya Laxmi Apartment "></option>
+                <option value="Parivar Apartment "></option>
+                <option value=" Ras Vihar"></option>
+                <option value="Saraswati Kunj   "></option>
+                <option value="Press Apartment "></option>
+                <option value="Govt Model School / Ambedkar Park"></option>
+                <option value="Dharma Apartment "></option>
+                <option value="Mother Dairy "></option>
+                <option value="Ganesh Nagar"></option>
+                <option value="Shakarpur School Block "></option>
+                <option value="Laxmi Nagar / Shakarpur Crossing"></option>
+                <option value="rainy well"></option>
+                <option value="Delhi Secretariat"></option>
+                <option value="ITO "></option>
+                <option value="Tilak Bridge"></option>
+                <option value="Mandi House"></option>
+                <option value="Modern School"></option>
+                <option value="Barakhamba Metro Station"></option>
+                <option value="Statesman House"></option>
+                <option value="Super Bazar"></option>
+                <option value="Sucheta Kriplani Hospital"></option>
+                <option value="Kalawati Hospital"></option>
+                <option value="Panchkuian Road"></option>
+                <option value="Panchkuian Road Banwari Lal Hospital "></option>
+                <option value="Meghdoot Bhawan"></option>
+                <option value="Karol Bagh Metro Station"></option>
+                <option value="Telephone Exchange Karol Bagh"></option>
+                <option value="Rajendra Place"></option>
+                <option value="East Patel Nagar "></option>
+                <option value="South Patel Nagar (Metro Station)"></option>
+                <option value="West Patel Nagar "></option>
+                <option value="Shadipur Metro Station"></option>
+                <option value="Shadipur Depot  "></option>
+                <option value="Moti Nagar Industrial Area"></option>
+                <option value="Karampura Terminal"></option>
+                <option value="New Moti Bagh B Block"></option>
+                <option value="Punjabi Bagh Terminal"></option>
+                <option value="Shakurpur Jjcolony"></option>
+                <option value="Samrat Enclave"></option>
+                <option value="Mahindra Park "></option>
+                <option value="Shakur Basti"></option>
+                <option value="Rani Bagh Railway Colony"></option>
+                <option value="Shri Guru Harkrishan Marg "></option>
+                <option value="Keshav Mahavidhyalaya"></option>
+                <option value="Bhagwan Mahavir Hospital"></option>
+                <option value="Mtnl Saraswati Vihar"></option>
+                <option value="West Enclave Terminal hu huh"></option>
+            </datalist>
+        </div>
+    </div>
+
+
+<script>
+    function savedata(){
+        const input1 = document.getElementById(`startstop`).value;
+        const input2 = document.getElementById(`deststop`).value;
+        localStorage.setItem(`input1`,input1);
+        localStorage.setItem(`input2`,input2);
+        window.location.href="http://127.0.0.1:5500/3.html";
+    }
+</script>    
+    
+</body>
+</html>

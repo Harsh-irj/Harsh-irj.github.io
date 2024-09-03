@@ -1,0 +1,142 @@
+*all{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.6;
+}
+
+#navbar img{
+    height: 60px;
+    margin: 0px 40px;
+    filter: invert(1);
+}
+
+#navbar ul{
+    display: flex;
+    padding-left: 4px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    color: white;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    background-color: black;
+    color: grey;
+}
+
+.container{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+    z-index: 10;
+}
+
+.divider{
+    border: none;
+    height: 92vh;
+    margin-top: 4px;
+    border-radius: 20px;
+}
+
+#container1{
+    background-color: #1a2e35;
+    float: left;
+    position: relative;
+}
+
+#container2{
+    background-color: #1cbbb4;
+    float: right;
+    position: relative;
+}
+
+#map {
+    height: 716px;
+    width: 95%;
+    left: 22px;
+    border-radius: 20px;
+    box-shadow: 14px 19px 20px black, inset 10px 10px 10px black;
+    top: 9%;
+}
+
+
+
+#startstop{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    box-shadow: 12px 12px 10px rgb(0, 0, 0), inset 5px 5px 10px rgba(0, 0, 0, 0.434);
+    right: -153px;
+    border-radius: 20px;
+    top: 5%;
+}
+
+#findBus{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border: none;
+    border-radius: 20px;
+    height: 37px;
+    width: 120px;
+    position: relative;
+    z-index: 22;
+    top: 5.5%;
+    left: 22.5%;
+    box-shadow: 12px 12px 10px rgb(0, 0, 0), inset 5px 5px 10px rgba(0, 0, 0, 0.434);
+    cursor: pointer;
+}
+
+#searchimg{
+    position: relative;
+    height: 21px;
+    top: 3px;
+    left: -13px;
+}
+
+@media  screen and (max-width:1500px) and (min-width:701px) {
+    #findBus{
+        left: 23.5%;
+    }
+
+}
+
+@media  screen and (max-width:700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    #container1{
+        height: 50vh;
+    }
+    #container2{
+        height: 50vh;
+    }
+}
